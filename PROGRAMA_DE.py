@@ -9,7 +9,7 @@ st.title("Aplicativo para dividir dados por DE")
 # Orientações de como utilizar a ferramenta
 st.text("Faça o upload do arquivo em formato .CSV. "
         "\n\nIMPORTANTE: a coluna com a DE deve ser a primeira da planilha.")
-"""
+
 # Atribuindo o arquivo a uma variável denominada "arquivo"
 arquivo = st.file_uploader("Upload do arquivo", type=["csv", "xlsx"])
 # Realizando a leitura do arquivo excel e atribuindo à variável "arquivo_lido"
@@ -46,4 +46,4 @@ with open(ZipfileDotZip, "rb") as f:
     </a>"
 st.markdown(href, unsafe_allow_html=True)
 
-"""
+
