@@ -7,10 +7,10 @@ from zipfile import ZipFile
 # Criando um título para o aplicativo
 st.title("Aplicativo para dividir dados por DE")
 # Orientações de como utilizar a ferramenta
-st.text("Faça o upload do arquivo em formato .CSV. "
+st.text("Faça o upload do arquivo. "
         "\n\nIMPORTANTE: a coluna com a DE deve ser a primeira da planilha.")
 # Atribuindo o arquivo a uma variável denominada "arquivo"
-arquivo = st.file_uploader("Upload do arquivo", type="csv")
+arquivo = st.file_uploader("Upload do arquivo", type=["csv", "xlsx"])
 # Realizando a leitura do arquivo excel e atribuindo à variável "arquivo_lido"
 arquivo_lido = pd.read_excel(arquivo)
 # Renomeando a primeira coluna para "NM_DIRETORIA"
@@ -44,5 +44,3 @@ with open(ZipfileDotZip, "rb") as f:
         Clique aqui para baixar os arquivos!\
     </a>"
 st.markdown(href, unsafe_allow_html=True)
-
-
