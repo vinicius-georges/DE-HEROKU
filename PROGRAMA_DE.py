@@ -3,7 +3,6 @@ import base64
 import streamlit as st
 import pandas as pd
 from zipfile import ZipFile
-import xldr
 
 # Criando um título para o aplicativo
 st.title("Aplicativo para dividir dados por DE")
