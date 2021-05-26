@@ -21,8 +21,8 @@ referentes à sua região.
 2. Clique no botão "Browse files" e selecione o arquivo que deseja
    utilizar em formato .csv ou .xlsx (a coluna do nome da DE deve
    ser a primeira da planilha importada);
-3. Digite o início do nome de cada um dos arquivos. O final será 
-   composto pelo nome da DE. Por exemplo, se digitar "DE-" o nome
-   do arquivo de Adamantina será "DE-Adamantina".
+3. Digite o final do nome de cada um dos arquivos. O início será 
+   composto pelo nome da DE. Por exemplo, se digitar "-DE" o nome
+   do arquivo de Adamantina será "Adamantina-DE".
    
 
