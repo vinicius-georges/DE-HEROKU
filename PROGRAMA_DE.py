@@ -19,21 +19,21 @@ if arquivo is not None:
     # Criando um DataFrame com apenas as Diretorias de Ensino
     de = arquivo_lido.iloc[0:len(arquivo_lido), 0:1].drop_duplicates()
     # Criando um arquivo Zip
-    zipObj = ZipFile("Diretorias.zip", "w")
-    ZipfileDotZip = "Diretorias.zip"
+    zipObj = ZipFile("Diretorias", "w")
+    ZipfileDotZip = "Diretorias"
 
     st.write("Todos os arquivos terminarão com o nome da DE.")
     name = st.text_input("Digite o início do nome dos arquivos. "
-                         "\n\n Exemplo: se digitar '-DE', o nome do arquivo da DE de ITU será ITU-DE.")
+                         "\n\n Exemplo: se digitar 'DE', o nome do arquivo da DE de ITU será DE-ITU.")
 
 
     # Criando um loop para separar os dados e criar arquivos
     for n in range(0, len(de), 1):
         base_de = arquivo_lido[arquivo_lido["NM_DIRETORIA"] == de.iloc[n, 0]]
         # criando arquivo csv
-        base_de.to_excel(de.iloc[n, 0]+name+".xlsx", index=False)
+        base_de.to_excel(name+de.iloc[n, 0]+".xlsx", index=False)
         # adicionando arquivos a uma pasta
-        zipObj.write(de.iloc[n, 0]+name+".xlsx")
+        zipObj.write(name+de.iloc[n, 0]+".xlsx")
     # fechando o arquivo Zip
     zipObj.close()
 
