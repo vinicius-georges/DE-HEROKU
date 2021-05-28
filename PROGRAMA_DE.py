@@ -23,7 +23,7 @@ if arquivo is not None:
     ZipfileDotZip = "Diretorias.zip"
 
     st.write("Todos os arquivos terminarão com o nome da DE.")
-    name = st.text_input("Digite o final do nome dos arquivos. "
+    name = st.text_input("Digite o início do nome dos arquivos. "
                          "\n\n Exemplo: se digitar '-DE', o nome do arquivo da DE de ITU será ITU-DE.")
 
 
