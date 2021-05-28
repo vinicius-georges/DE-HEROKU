@@ -19,8 +19,8 @@ if arquivo is not None:
     # Criando um DataFrame com apenas as Diretorias de Ensino
     de = arquivo_lido.iloc[0:len(arquivo_lido), 0:1].drop_duplicates()
     # Criando um arquivo Zip
-    zipObj = ZipFile("Diretorias", "w")
-    ZipfileDotZip = "Diretorias"
+    zipObj = ZipFile("Diretorias.zip", "w")
+    ZipfileDotZip = "Diretorias.zip"
 
     st.write("Todos os arquivos iniciarão com o nome da DE.")
     name = st.text_input("Digite o início do nome dos arquivos. "
