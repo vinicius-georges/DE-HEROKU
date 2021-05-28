@@ -22,7 +22,7 @@ if arquivo is not None:
     zipObj = ZipFile("Diretorias", "w")
     ZipfileDotZip = "Diretorias"
 
-    st.write("Todos os arquivos terminarão com o nome da DE.")
+    st.write("Todos os arquivos iniciarão com o nome da DE.")
     name = st.text_input("Digite o início do nome dos arquivos. "
                          "\n\n Exemplo: se digitar 'DE', o nome do arquivo da DE de ITU será DE-ITU.")
 
